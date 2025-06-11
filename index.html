@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaBio AI - Best Instagram Bio Generator | Create Professional Bios</title>
+    <meta name="description" content="Create engaging Instagram bios with InstaBio AI. Our professional bio generator helps influencers, brands, and creators craft perfect Instagram profiles instantly.">
+    <meta name="keywords" content="instagram bio generator, AI bio maker, professional bio, instagram profile, social media bio">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://instabio-ai.com" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="InstaBio AI - Professional Instagram Bio Generator">
+    <meta property="og:description" content="Create engaging Instagram bios with InstaBio AI. Generate professional bios instantly.">
+    <meta property="og:image" content="https://instabio-ai.com/og-image.jpg">
+    <meta property="og:url" content="https://instabio-ai.com">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="InstaBio AI - Professional Instagram Bio Generator">
+    <meta name="twitter:description" content="Create engaging Instagram bios with InstaBio AI">
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "InstaBio AI",
+      "description": "Professional Instagram bio generator powered by AI",
+      "applicationCategory": "Social Media Tool",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <a href="#" class="logo">InstaBio <span>AI</span></a>
+            <nav class="desktop-nav">
+                <a href="#hero">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="about.html#">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button id="menu-btn" class="menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Mobile Side Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <button id="close-btn" class="close-btn">×</button>
+        <a href="#hero" class="mobile-menu-link">Home</a>
+        <a href="#gallery" class="mobile-menu-link">Gallery</a>
+        <a href="#" class="mobile-menu-link">About</a>
+        <a href="#" class="mobile-menu-link">Contact</a>
+    </div>
+
+    <main>
+        <!-- Hero & Generator Section -->
+        <section id="hero">
+            <div class="container hero-content">
+                <h1>Craft Your Perfect Instagram Bio with AI</h1>
+                <p>Describe your vibe, brand, or personality, and let our AI generate bios that capture attention.</p>
+                
+                <div class="generator-box">
+                    <textarea id="userInput" placeholder="E.g., 'A travel blogger who loves coffee and minimalist design. I share tips on budget travel.'"></textarea>
+                    <button id="generateBtn">
+                        <i class="fas fa-magic"></i> Generate Bio
+                    </button>
+                </div>
+
+                <div id="bio-output">
+                    <div class="loader-container" style="display: none;">
+                        <div class="loader"></div>
+                        <p>Crafting your bios...</p>
+                    </div>
+                    <p class="placeholder-text">Your generated bios will appear here ✨</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section id="gallery" aria-label="inspiration gallery">
+            <div class="container">
+                <h2>Inspiration Gallery</h2>
+                <p class="subtitle">Get inspired by stunning visuals.</p>
+                <div class="photo-grid">
+                    <div class="photo-item"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=2787&auto=format&fit=crop" alt="Professional influencer posing with a friendly dog, showcasing lifestyle content" loading="lazy"></div>
+                    <div class="photo-item"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2787&auto=format&fit=crop" alt="Professional male entrepreneur headshot with natural lighting" loading="lazy"></div>
+                    <div class="photo-item"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=2787&auto=format&fit=crop" alt="Fashionable woman in a stylish outfit" loading="lazy"></div>
+                    <div class="photo-item"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2787&auto=format&fit=crop" alt="Portrait of a woman smiling against a blurred background" loading="lazy"></div>
+                    <div class="photo-item"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=2864&auto=format&fit=crop" alt="Woman with face cream applying skincare routine" loading="lazy"></div>
+                    <div class="photo-item"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2864&auto=format&fit=crop" alt="Woman with bold makeup and artistic expression" loading="lazy"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://pryntool.com" target="_blank" aria-label="Website"><i class="fas fa-globe"></i></a>
+                </div>
+                <div class="footer-nav">
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 InstaBio AI. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Your Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
